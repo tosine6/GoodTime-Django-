@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% for post in posts %}
+
+<img class="rounded-circle" src="{{post.author.profile.image.url}}" alt="profile image">
+{% endfor %}
+<h4>{{user.username}} </h4>
+<p>{{user.email}}</p>
+
+<form action=""method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <legend class="border-bottom mb-b">Profile Info</legend>
+    {{ user_form }}
+    {{profile_form}}
+    <div class="form-group">
+        <button class="btn btn-outline-info" type="submit">Update</button>
+    </div>
+</form>
+{% endblock %}
