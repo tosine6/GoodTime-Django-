@@ -118,7 +118,9 @@ def productdetail(request):
     return render (request, template_name)
 
 
-
+def about_us(request):
+    template_name = 'about-us.html'
+    return render (request, template_name)
 
 
 

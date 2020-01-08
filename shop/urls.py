@@ -16,7 +16,7 @@ urlpatterns = [
     path('myaccount/logout/',views.user_logout, name='my-account'),
     # path('login-register/',views.user_login, name='login-register'),
     path('auth/', include('django.contrib.auth.urls')),
-
+    path('about-us/',views.about_us, name='about-us'),
     path('wishlist/',views.getwishlist, name='wishlist'),
     path('product-details/',views.productdetail, name='product-details'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
