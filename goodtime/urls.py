@@ -20,6 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('shop.urls')),
-    path('blog', include('blog.urls')),
+    path('blog/', include('blog.urls')),
+    path('upload_drinks/', include('upload_drinks.urls')),
     # path('reset_password', rp.reset_password, name="reset_password"),
 ]
