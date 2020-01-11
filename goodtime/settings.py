@@ -126,24 +126,10 @@ STATIC_URL = '/static/'
 
 
 
+EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
 
-
-# SENDGRID_API_KEY = os.getenv('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')
-
-# EMAIL_HOST = 'smtp.sendgrid.net'
-# EMAIL_HOST_USER = 'good_time_send_mail'
-# EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
-
-# EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
-# SENDGRID_API_KEY = os.environ.get("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")
-
-# # Toggle sandbox mode (when running in DEBUG mode)
-# SENDGRID_SANDBOX_MODE_IN_DEBUG=True
+SENDGRID_API_KEY = 'API_KEY'
+SENDGRID_SANDBOX_MODE_IN_DEBUG=False
 
 # # echo to stdout or any other file-like object that is passed to the backend via the stream kwarg.
 # SENDGRID_ECHO_TO_STDOUT=True

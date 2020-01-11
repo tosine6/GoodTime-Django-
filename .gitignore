@@ -11,7 +11,7 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 media
-goodtime_env
+gt_env
 /.vscode
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
@@ -121,4 +121,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# End of https://www.gitignore.io/api/django
+# End of https://www.gitignore.io/api/djangosendgrid.env
+sendgrid.env

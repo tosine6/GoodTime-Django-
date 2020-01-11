@@ -100,8 +100,23 @@ def user_logout(request):
 
 
 def reset_password(request):
-    return render (request, 'registration/password_reset.html')
+    if request.method == "POST":
+        email = request.POST['reset_email']
+        send_mail(
+            'Password Rest',
+            'Kindly click on the link <button><button> to reset your mail',
+            'adetosine6@gmail.com',
+            ['ade2adeyinka@gmail.com', email],
+            fail_silently=False,
+            )
+        
 
+    template_name = 'password/password_reset_form.html'
+    return render (request, template_name)
+
+def reset_password_done(request):
+    template_name = 'password/password_reset_done.html'
+    return render (request, template_name)
 
 def my_account(request):
     template_name = 'my-account.html'
