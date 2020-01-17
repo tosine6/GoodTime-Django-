@@ -6,7 +6,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import SignupForm, UserUpdateForm, ProfileUpdateForm
 
-
 from django.core.mail import send_mail
 
 def index(request):
