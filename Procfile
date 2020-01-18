@@ -1,1 +1,1 @@
-web: gunicorn goodtime.wsgi --log-file -
+web: gunicorn goodtime.wsgi
