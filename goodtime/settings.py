@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'shop',
     'blog',
 
-
 ]
 
 MIDDLEWARE = [
@@ -125,7 +124,6 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
 
 
 EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
