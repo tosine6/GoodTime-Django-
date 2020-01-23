@@ -133,3 +133,11 @@ SENDGRID_SANDBOX_MODE_IN_DEBUG=False
 
 # # echo to stdout or any other file-like object that is passed to the backend via the stream kwarg.
 # SENDGRID_ECHO_TO_STDOUT=True
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'adetosine6@gmail.com'
+EMAIL_HOST_PASSWORD = 'itest2me321'
