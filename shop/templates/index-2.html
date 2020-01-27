@@ -12,7 +12,7 @@
         <meta name="robots" content="noindex, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
     </head>
     <body>
         <!-- header start -->
@@ -46,10 +46,10 @@
                                     </li>
                                     <li class="top-hover"><a href="#">Setting  <i class="ion-chevron-down"></i></a>
                                         <ul>
-                                            <li><a href="wishlist.html">Wishlist  </a></li>
-                                            <li><a href="login-register.html">Login</a></li>
-                                            <li><a href="login-register.html">Register</a></li>
-                                            <li><a href="my-account.html">my account</a></li>
+                                            <li><a href="wishlist">Wishlist  </a></li>
+                                            <li><a href="login">Login</a></li>
+                                            <li><a href="register">Register</a></li>
+                                            <li><a href="my-account">my account</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -64,14 +64,14 @@
                         <div class="col-lg-3 col-md-4 col-12 col-sm-4">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img alt="" src="assets/img/logo/logo.png">
+                                    <img alt="" src="{% static 'assets/img/logo/logo.png' %}">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-8 col-12 col-sm-8">
                             <div class="header-middle-right f-right">
                                 <div class="header-login">
-                                    <a href="login-register.html">
+                                    <a href="login">
                                         <div class="header-icon-style">
                                             <i class="icon-user icons"></i>
                                         </div>
@@ -135,8 +135,8 @@
                                             <h4>Total : <span class="shop-total">$260.00</span></h4>
                                         </div>
                                         <div class="shopping-cart-btn">
-                                            <a href="cart-page.html">view cart</a>
-                                            <a href="checkout.html">checkout</a>
+                                            <a href="cart-page">view cart</a>
+                                            <a href="checkout">checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,10 +152,10 @@
                             <div class="main-menu">
                                 <nav>
                                     <ul>
-                                        <li class="top-hover"><a href="index.html">home <i class="ion-chevron-down"></i></a>
+                                        <li class="top-hover"><a href="">home <i class="ion-chevron-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="index.html">home version 1</a></li>
-                                                <li><a href="index-2.html">home version 2</a></li>
+                                                <li><a href="index">home version 1</a></li>
+                                                <li><a href="index-2">home version 2</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="about-us.html">about</a></li>
@@ -385,7 +385,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-1.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -412,7 +412,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-2.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -438,7 +438,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-3.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -465,7 +465,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-4.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -491,7 +491,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-5.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -518,7 +518,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-6.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-6.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -544,7 +544,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-7.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -571,7 +571,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-8.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -597,7 +597,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-9.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-9.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -624,7 +624,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-10.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-10.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -654,7 +654,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-10.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-10.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -681,7 +681,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-9.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-9.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -707,7 +707,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-7.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -734,7 +734,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-8.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -760,7 +760,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-6.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-6.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -787,7 +787,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-5.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -813,7 +813,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-4.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -840,7 +840,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-3.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -866,7 +866,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-2.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -893,7 +893,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-1.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -923,7 +923,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-5.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -950,7 +950,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-4.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -976,7 +976,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-2.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1003,7 +1003,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-3.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1029,7 +1029,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-1.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1056,7 +1056,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-10.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-10.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1082,7 +1082,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-9.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-9.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1109,7 +1109,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-7.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1135,7 +1135,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-8.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1162,7 +1162,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details.html">
-                                            <img src="assets/img/product/product-5.jpg" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1195,14 +1195,14 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="single-banner mb-30">
                             <div class="hover-style">
-                                <a href="#"><img src="assets/img/banner/banner-7.jpg" alt=""></a>
+                                <a href="#"><img src="{% static 'assets/img/banner/banner-7.jpg' %}" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="single-banner mb-30">
                             <div class="hover-style">
-                                <a href="#"><img src="assets/img/banner/banner-8.jpg" alt=""></a>
+                                <a href="#"><img src="{% static 'assets/img/banner/banner-8.jpg' %}" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -1215,7 +1215,7 @@
                     <div class="best-food-width-1">
                         <div class="single-banner">
                             <div class="hover-style">
-                                <a href="#"><img src="assets/img/banner/banner-5.jpg" alt=""></a>
+                                <a href="#"><img src="{% static 'assets/img/banner/banner-5.jpg' %}" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -1242,7 +1242,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-1.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1267,7 +1267,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-2.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1291,7 +1291,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-3.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1316,7 +1316,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-4.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1344,7 +1344,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-5.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1369,7 +1369,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-6.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-6.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1393,7 +1393,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-7.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1418,7 +1418,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-8.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1446,7 +1446,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-9.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-9.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1471,7 +1471,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-10.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-10.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1495,7 +1495,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-1.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1520,7 +1520,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details.html">
-                                                <img src="assets/img/product/product-2.jpg" alt="">
+                                                <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1548,7 +1548,7 @@
                     <div class="best-food-width-1 mrg-small-35">
                         <div class="single-banner">
                             <div class="hover-style">
-                                <a href="#"><img src="assets/img/banner/banner-6.jpg" alt=""></a>
+                                <a href="#"><img src="{% static 'assets/img/banner/banner-6.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -1557,7 +1557,7 @@
         </div>
         <div class="banner-area">
             <div class="container">
-                <div class="discount-overlay bg-img pt-130 pb-130" style="background-image:url(assets/img/banner/banner-4.jpg);">
+                <div class="discount-overlay bg-img pt-130 pb-130" style="background-image:url(assets/img/banner/banner-4.)">
                     <div class="discount-content text-center">
                         <h3>It’s Time To Start <br>Your Own Revolution By Laurent</h3>
                         <p>Exclusive Offer -10% Off This Week</p>
@@ -1572,22 +1572,22 @@
             <div class="container">
                 <div class="brand-logo-active owl-carousel">
                     <div class="single-brand-logo">
-                        <img alt="" src="assets/img/brand-logo/logo-1.png">
+                        <img alt="" src="{% static 'assets/img/brand-logo/logo-1.png">
                     </div>
                     <div class="single-brand-logo">
-                        <img alt="" src="assets/img/brand-logo/logo-2.png">
+                        <img alt="" src="{% static 'assets/img/brand-logo/logo-2.png">
                     </div>
                     <div class="single-brand-logo">
-                        <img alt="" src="assets/img/brand-logo/logo-3.png">
+                        <img alt="" src="{% static 'assets/img/brand-logo/logo-3.png">
                     </div>
                     <div class="single-brand-logo">
-                        <img alt="" src="assets/img/brand-logo/logo-4.png">
+                        <img alt="" src="{% static 'assets/img/brand-logo/logo-4.png">
                     </div>
                     <div class="single-brand-logo">
-                        <img alt="" src="assets/img/brand-logo/logo-5.png">
+                        <img alt="" src="{% static 'assets/img/brand-logo/logo-5.png">
                     </div>
                     <div class="single-brand-logo">
-                        <img alt="" src="assets/img/brand-logo/logo-2.png">
+                        <img alt="" src="{% static 'assets/img/brand-logo/logo-2.png">
                     </div>
                 </div>
             </div>
@@ -1600,13 +1600,13 @@
                             <div class="footer-about mb-40">
                                 <div class="footer-logo">
                                     <a href="index.html">
-                                        <img src="assets/img/logo/footer-logo.png" alt="">
+                                        <img src="{% static 'assets/img/logo/footer-logo.png" alt="">
                                     </a>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                                 <div class="payment-img">
                                     <a href="#">
-                                        <img src="assets/img/icon-img/payment.png" alt="">
+                                        <img src="{% static 'assets/img/icon-img/payment.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -1708,26 +1708,26 @@
                                 <!-- Thumbnail Large Image start -->
                                 <div class="tab-content">
                                     <div id="pro-1" class="tab-pane fade show active">
-                                        <img src="assets/img/product-details/product-detalis-l1.jpg" alt="">
+                                        <img src="{% static 'assets/img/product-details/product-detalis-l1.jpg' %}" alt="">
                                     </div>
                                     <div id="pro-2" class="tab-pane fade">
-                                        <img src="assets/img/product-details/product-detalis-l2.jpg" alt="">
+                                        <img src="{% static 'assets/img/product-details/product-detalis-l2.jpg' %}" alt="">
                                     </div>
                                     <div id="pro-3" class="tab-pane fade">
-                                        <img src="assets/img/product-details/product-detalis-l3.jpg" alt="">
+                                        <img src="{% static 'assets/img/product-details/product-detalis-l3.jpg' %}" alt="">
                                     </div>
                                     <div id="pro-4" class="tab-pane fade">
-                                        <img src="assets/img/product-details/product-detalis-l4.jpg" alt="">
+                                        <img src="{% static 'assets/img/product-details/product-detalis-l4.jpg' %}" alt="">
                                     </div>
                                 </div>
                                 <!-- Thumbnail Large Image End -->
                                 <!-- Thumbnail Image End -->
                                 <div class="product-thumbnail">
                                     <div class="thumb-menu owl-carousel nav nav-style" role="tablist">
-                                        <a class="active" data-toggle="tab" href="#pro-1"><img src="assets/img/product-details/product-detalis-s1.jpg" alt=""></a>
-                                        <a data-toggle="tab" href="#pro-2"><img src="assets/img/product-details/product-detalis-s2.jpg" alt=""></a>
-                                        <a data-toggle="tab" href="#pro-3"><img src="assets/img/product-details/product-detalis-s3.jpg" alt=""></a>
-                                        <a data-toggle="tab" href="#pro-4"><img src="assets/img/product-details/product-detalis-s4.jpg" alt=""></a>
+                                        <a class="active" data-toggle="tab" href="#pro-1"><img src="{% static 'assets/img/product-details/product-detalis-s1.jpg' %}" alt=""></a>
+                                        <a data-toggle="tab" href="#pro-2"><img src="{% static 'assets/img/product-details/product-detalis-s2.jpg' %}" alt=""></a>
+                                        <a data-toggle="tab" href="#pro-3"><img src="{% static 'assets/img/product-details/product-detalis-s3.jpg' %}" alt=""></a>
+                                        <a data-toggle="tab" href="#pro-4"><img src="{% static 'assets/img/product-details/product-detalis-s4.jpg' %}" alt=""></a>
                                     </div>
                                 </div>
                                 <!-- Thumbnail image end -->

@@ -6,8 +6,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import SignupForm, UserUpdateForm, ProfileUpdateForm
 
-
 from django.core.mail import send_mail
+from django.conf import settings
 
 def index(request):
     context = {}
@@ -20,22 +20,6 @@ def index2(request):
     template = 'index-2.html'
     return render(request, template, context)
 
-
-def signup(request):
-    context = {}
-    template = 'register.html'
-    if request.method == "POST":
-        form = SignupForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('login')
-        else:
-            # context['error']= "Invalid input"
-            context = {'error': "Invalid input"}
-            return render(request, template, context)
-    else:
-        form = SignupForm()
-    return render(request, template)
 
 @login_required
 def profile(request):
@@ -61,9 +45,17 @@ def profile(request):
     template_name = 'profile.html'
     return render(request, template_name, context)
 
-    
 
-def send_email(request):
+
+def email(user_email):
+    subject = 'Thank you for registering to goodtime'
+    message = 'Kindly click the button bellow to authenticate your account'
+    email_from = settings.EMAIL_HOST_USER
+    recipient_list = ['ade2adeyinka@gmail.com',user_email,]
+    send_mail( subject, message, email_from, recipient_list )
+    return redirect('login')
+
+def sendEmail(request):
     send_mail(
     'Subject here',
     'Here is the message.',
@@ -100,8 +92,23 @@ def user_logout(request):
 
 
 def reset_password(request):
-    return render (request, 'registration/password_reset.html')
+    if request.method == "POST":
+        email = request.POST['reset_email']
+        send_mail(
+            'Password Rest',
+            'Kindly click on the link <button><button> to reset your mail',
+            'adetosine6@gmail.com',
+            ['ade2adeyinka@gmail.com', email],
+            fail_silently=False,
+            )
+        
 
+    template_name = 'password/password_reset_form.html'
+    return render (request, template_name)
+
+def reset_password_done(request):
+    template_name = 'password/password_reset_done.html'
+    return render (request, template_name)
 
 def my_account(request):
     template_name = 'my-account.html'
@@ -122,38 +129,36 @@ def about_us(request):
     template_name = 'about-us.html'
     return render (request, template_name)
 
+def signup(request):
+    context = {}
+    template = 'register.html'
+    if request.method == "POST":
+        username = request.POST['username']
+        user_email = request.POST['email']
+        user_password1 = request.POST['password1']
+        email(user_email)
+        user = User.objects.create_user(username=username, email=user_email, password=user_password1)
+        return redirect('login')
+    else:
+        # context['error'] = "Try another user name and make sure your passwords are entered correctly"
+        return render(request, template, context)
+    return render(request, template)
 
-
-
-
-
-
-
-
-
-
-# def signup1(request):
-    # context = {}
-    # template = 'register.html'
-    # if request.method == "POST":
-    #     username = request.POST['username']
-    #     user_email = request.POST['email']
-    #     user_password1 = request.POST['password1']
-    #     # user_password2 = request.POST.get['password2']
-
-    #     user = User.objects.create_user(username=username, email=user_email, password=user_password1)
-        
-    #     # send_mail(
-    #     # 'Subject here',
-    #     # 'Here is the message.',
-    #     # 'adetosine6@gmail.com',
-    #     # ['ade2adeyinka@gmail.com'],
-    #     # fail_silently=False,
-    #     # )
-    #     return redirect('login')
-    # else:
-    #     form = UserCreationForm()
-    #     context= {'form': form}
-    #     return render(request, template, context)
-
+# def signup(request):
+#     context = {}
+#     template = 'register.html'
+#     if request.method == "POST":
+#         form = SignupForm(request.POST)
+#         if form.is_valid():
+#             print(request.post('email'))
+#             email(request.post('email'))
+#             form.save()
+#             return redirect('login')
+#         else:
+#             # context['error']= "Invalid input"
+#             context = {'error': "Try another user name and make sure your passwords are entered correctly"}
+#             return render(request, template, context)
+#     else:
+#         form = SignupForm()
+#     return render(request, template)
 

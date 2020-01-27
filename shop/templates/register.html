@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
-
 {% block content %}
+{% load static %}
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
     
@@ -364,7 +366,7 @@
                                         <div class="login-register-form">
                                             <form action="" method="POST">
                                                 {% csrf_token %}
-                                                {{error}}
+                                                <h5 style="color:red; text-align: center;" >{{error}}</h5 style="color:red;" >
                                                 <input type="text" placeholder="username" name="username" required> 
                                                 <input type="email" placeholder="email" name="email" required>
                                                 <input type="password" placeholder="password" name="password1" required>

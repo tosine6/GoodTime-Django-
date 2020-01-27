@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
 <!doctype html>
 <html class="no-js" lang="zxx">
     
@@ -9,22 +13,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-		
-		<!-- all css here -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/slick.css">
-        <link rel="stylesheet" href="assets/css/chosen.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
-        <link rel="stylesheet" href="assets/css/ionicons.min.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
+
     </head>
     <body>
         <!-- header start -->
@@ -75,8 +65,8 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-12 col-sm-4">
                             <div class="logo">
-                                <a href="index.html">
-                                    <img alt="" src="assets/img/logo/logo.png">
+                                <a href="index">
+                                    <img alt="" src="{% static 'assets/img/logo/logo.png' %}">
                                 </a>
                             </div>
                         </div>
@@ -668,21 +658,9 @@
             </div>
         </div>
 		
-		
-		
-		
-		
-		<!-- all js here -->
-        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <script src="assets/js/ajax-mail.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
     </body>
 
 <!-- Mirrored from demo.hasthemes.com/billy-preview/billy/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Dec 2019 16:59:54 GMT -->
 </html>
+
+{% endblock %}

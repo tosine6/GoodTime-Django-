@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/slider/slider-1.jpg' %}">
 
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -62,8 +62,9 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-12 col-sm-4">
                             <div class="logo">
-                                <a href="index">
-                                    <img alt="" src="{% static 'assets/img/logo/logo.png' %}">
+                                <a href="">
+                                    <!-- <img alt="" src="{% static 'assets/img/logo/logo.png' %}"> -->
+                                    <h2 style="color: darkred;">GoodTime</h2>
                                 </a>
                             </div>
                         </div>
@@ -74,13 +75,14 @@
                                         <div class="header-icon-style">
                                             <i class="icon-user icons"></i>
                                         </div>
+                                    </a>
                                         <div class="login-text-content">
-                                            <p>Register <br> or <span>Sign in</span></p>
+                                           <p><a href="signup">Register </a><br> or <a href="login"> <span>Sign in</span></a></p>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="header-wishlist">
-                                    <a href="wishlist.html">
+                                    <a href="wishlist">
                                         <div class="header-icon-style">
                                             <i class="icon-heart icons"></i>
                                         </div>
@@ -163,45 +165,46 @@
                                                 <li>
                                                     <ul>
                                                         <li class="mega-menu-title"><a href="#">Beer</a></li>
-                                                        <li><a href="shop">Guiness</a></li>
+                                                        <li><a href="shop">Budweizer</a></li>
+                                                        <li><a href="shop">Goldberg</a></li>
+                                                        <li><a href="shop">Heineken</a></li>
+                                                        <li><a href="shop">Gulder</a></li>
                                                         <li><a href="shop">Star</a></li>
                                                         <li><a href="shop">Trophy</a></li>
-                                                        <li><a href="shop">steak</a></li>
-                                                        <li><a href="shop">tuna steak</a></li>
-                                                        <li><a href="shop">spaghetti </a></li>
+                                                        <li><a href="shop">Guinneop</a></li>                              
+                                                        <li><a href="shop">Life</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <ul>
                                                         <li class="mega-menu-title"><a href="#">Vodka</a></li>
-                                                        <li><a href="shop">rice</a></li>
-                                                        <li><a href="shop">pizza</a></li>
-                                                        <li><a href="shop">hamburger</a></li>
-                                                        <li><a href="shop">eggs</a></li>
-                                                        <li><a href="shop">sausages</a></li>
-                                                        <li><a href="shop">apple juice</a></li>
+                                                        <li><a href="shop">Absolut</a></li>
+                                                        <li><a href="shop">Ciroc</a></li>
+                                                        <li><a href="shop">Grey Goose</a></li>
+                                                        <li><a href="shop">Magic Moments</a></li>
+                                                        <li><a href="shop">Skyy</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <ul>
                                                         <li class="mega-menu-title"><a href="#">Gin</a></li>
-                                                        <li><a href="shop.html">milk</a></li>
-                                                        <li><a href="shop.html">grape juice</a></li>
-                                                        <li><a href="shop.html">cookie</a></li>
-                                                        <li><a href="shop.html">candy</a></li>
-                                                        <li><a href="shop.html">cake</a></li>
-                                                        <li><a href="shop.html">cupcake</a></li>
+                                                        <li><a href="shop">Chelsea</a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <ul>
-                                                        <li class="mega-menu-title"><a href="#">Bitters</a></li>
-                                                        <li><a href="shop.html">pie</a></li>
-                                                        <li><a href="shop.html">stoberry</a></li>
-                                                        <li><a href="shop.html">sandwich</a></li>
-                                                        <li><a href="shop.html">bread</a></li>
-                                                        <li><a href="shop.html">steak</a></li>
-                                                        <li><a href="shop.html">hamburger</a></li>
+                                                        <li class="mega-menu-title"><a href="#">Whisky</a></li>
+                                                        <li><a href="shop">Glenfiddich</a></li>
+                                                        <li><a href="shop">Hennessy</a></li>
+                                                        <li><a href="shop">Jack Daniel</a></li>
+                                                        <li><a href="shop">Jameson</a></li>
+                                                        <li><a href="shop">Johnnie Walker</a></li>
+                                                        <li><a href="shop">Royal Circle</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -221,19 +224,19 @@
                                                 <li><a href="shop">shop Grid</a></li>
                                                 <li><a href="shop-list">shop list</a></li>
                                                 <li><a href="product-details">product details</a></li>
-                                                <li><a href="cart-page.html">cart page</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                                <li><a href="my-account.html">my account</a></li>
+                                                <li><a href="cart-page">cart page</a></li>
+                                                <li><a href="checkout">checkout</a></li>
+                                                <li><a href="wishlist">wishlist</a></li>
+                                                <li><a href="my-account">my account</a></li>
                                                 <li><a href="signup">login / register</a></li>
-                                                <li><a href="contact.html">contact</a></li>
-                                                <li><a href="testimonial.html">Testimonials</a></li>
+                                                <li><a href="contact">contact</a></li>
+                                                <li><a href="testimonial">Testimonials</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">contact us</a></li>
-                                        <li><a href="shop.html">burger</a></li>
-                                        <li><a href="shop.html">pizza</a></li>
-                                        <li><a href="shop.html">cold drink</a></li>
+                                        <li><a href="contact">contact us</a></li>
+                                        <li><a href="shop">burger</a></li>
+                                        <li><a href="shop">pizza</a></li>
+                                        <li><a href="shop">cold drink</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -249,7 +252,7 @@
 							<div class="mobile-menu">
 								<nav id="mobile-menu-active">
 									<ul class="menu-overflow" id="nav">
-										<li><a href="index.html">Home</a>
+										<li><a href="index">Home</a>
 											<ul>
 												<li><a href="index">home version 1</a></li>
                                                 <li><a href="index-2">home version 2</a></li>
@@ -257,74 +260,81 @@
 										</li>
 										<li><a href="#">pages</a>
 											<ul>
-												<li><a href="about-us.html">about us </a></li>
-                                                <li><a href="shop.html">shop Grid</a></li>
-                                                <li><a href="shop-list.html">shop list</a></li>
+												<li><a href="about-us">about us </a></li>
+                                                <li><a href="shop">shop Grid</a></li>
+                                                <li><a href="shop-list">shop list</a></li>
                                                 <li><a href="product-details">product details</a></li>
-                                                <li><a href="cart-page.html">cart page</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                                <li><a href="my-account.html">my account</a></li>
+                                                <li><a href="cart-page">cart page</a></li>
+                                                <li><a href="checkout">checkout</a></li>
+                                                <li><a href="wishlist">wishlist</a></li>
+                                                <li><a href="my-account">my account</a></li>
                                                 <li><a href="signup">login / register</a></li>
-                                                <li><a href="contact.html">contact</a></li>
-                                                <li><a href="testimonial.html">Testimonials</a></li>
+                                                <li><a href="contact">contact</a></li>
+                                                <li><a href="testimonial">Testimonials</a></li>
 											</ul>
 										</li>
-										<li><a href="shop.html"> Shop </a>
+										<li><a href="shop">shop </a>
                                             <ul>
-                                                <li><a href="#">Categories 01</a>
+                                                <li><a href="#">Whisky</a>
                                                     <ul>
-                                                        <li><a href="shop.html">salad</a></li>
-                                                        <li><a href="shop.html">sandwich</a></li>
-                                                        <li><a href="shop.html">bread</a></li>
-                                                        <li><a href="shop.html">steak</a></li>
-                                                        <li><a href="shop.html">tuna steak</a></li>
-                                                        <li><a href="shop.html">spaghetti </a></li>
+                                                        
+                                                        <li><a href="shop">Glenfiddich</a></li>
+                                                        <li><a href="shop">Hennessy</a></li>
+                                                        <li><a href="shop">Jack Daniel</a></li>
+                                                        <li><a href="shop">Jameson</a></li>
+                                                        <li><a href="shop">Johnnie Walker</a></li>
+                                                        <li><a href="shop">Royal Circle</a></li>
+                                                        
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Categories 02</a>
+                                                <li><a href="#">Vodka</a>
                                                     <ul>
-                                                        <li><a href="shop.html">rice</a></li>
-                                                        <li><a href="shop.html">pizza</a></li>
-                                                        <li><a href="shop.html">hamburger</a></li>
-                                                        <li><a href="shop.html">eggs</a></li>
-                                                        <li><a href="shop.html">sausages</a></li>
-                                                        <li><a href="shop.html">apple juice</a></li>
+                                                        <li><a href="shop">Absolut</a></li>
+                                                        <li><a href="shop">Ciroc</a></li>
+                                                        <li><a href="shop">Grey Goose</a></li>
+                                                        <li><a href="shop">Magic Moments</a></li>
+                                                        <li><a href="shop">Skyy</a></li>
+                                            
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Categories 03</a>
+                                                <li><a href="#">Gin</a>
                                                     <ul>
-                                                        <li><a href="shop.html">milk</a></li>
-                                                        <li><a href="shop.html">grape juice</a></li>
-                                                        <li><a href="shop.html">cookie</a></li>
-                                                        <li><a href="shop.html">candy</a></li>
-                                                        <li><a href="shop.html">cake</a></li>
-                                                        <li><a href="shop.html">cupcake</a></li>
+                                                        <li><a href="shop">Chelsea</a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
+                                                        <li><a href="shop"></a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Categories 04</a>
+                                                <li><a href="#">Beer</a>
                                                     <ul>
-                                                        <li><a href="shop.html">pie</a></li>
-                                                        <li><a href="shop.html">stoberry</a></li>
-                                                        <li><a href="shop.html">sandwich</a></li>
-                                                        <li><a href="shop.html">bread</a></li>
-                                                        <li><a href="shop.html">steak</a></li>
-                                                        <li><a href="shop.html">hamburger</a></li>
+                                                        <li><a href="shop">Budweizer</a></li>
+                                                        <li><a href="shop">Goldberg</a></li>
+                                                        <li><a href="shop">Heineken</a></li>
+                                                        <li><a href="shop">Gulder</a></li>
+                                                        <li><a href="shop">Star</a></li>
+                                                        <li><a href="shop">Trophy</a></li>
+                                                        <li><a href="shop">Guinneop</a></li>
+                                                        
+                                                    
+                                                        <li><a href="shop">Life</a></li>
+
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
-										<li><a href="blog-rightsidebar.html">blog</a>
+										<li><a href="blog-rightsidebar">blog</a>
 											<ul>
-												<li><a href="blog.html">Blog No sidebar</a></li>
-                                                <li><a href="blog-rightsidebar.html">Blog sidebar</a></li>
-                                                <li><a href="blog-details.html">Blog details</a></li>
-                                                <li><a href="blog-details-gallery.html">Blog details gallery</a></li>
-                                                <li><a href="blog-details-video.html">Blog details video</a></li>
+												<li><a href="blog">Blog No sidebar</a></li>
+                                                <li><a href="blog-rightsidebar">Blog sidebar</a></li>
+                                                <li><a href="blog-details">Blog details</a></li>
+                                                <li><a href="blog-details-gallery">Blog details gallery</a></li>
+                                                <li><a href="blog-details-video">Blog details video</a></li>
 											</ul>
 										</li>
-										<li><a href="contact.html">contact us</a></li>
-										<li><a href="shop.html">burger</a></li>
+										<li><a href="contact">contact us</a></li>
+										<li><a href="shop">burger</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -332,26 +342,68 @@
 					</div>
 				</div>
 			</div>
-			<!-- mobile-menu-area-end -->
+            <!-- mobile-menu-area-end -->
+        
         </header>
+        
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'assets/img/slider/slider-1.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'assets/img/slider/slider-2.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'assets/img/slider/slider-3.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
         <div class="slider-area">
             <div class="slider-active owl-dot-style owl-carousel">
                 <div class="single-slider pt-210 pb-220 bg-img" style="background-image:url(assets/img/slider/slider-1.jpg);">
                     <div class="container">
                         <div class="slider-content slider-animated-1">
-                            <h1 class="animated">Drink & Heathy Food</h1>
-                            <h3 class="animated">Fresh Heathy and Organic.</h3>
+                            <h1 class="animated">Have a Good Time</h1>
+                            <h3 class="animated">Experince Lagos Life</h3>
                             <div class="slider-btn mt-90">
                                 <a class="animated" href="product-details">Order Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="single-slider pt-210 pb-220 bg-img" style="background-image:url(assets/img/slider/slider-2.jpg);">
+                <div><img src="{% static 'assets/img/slider/slider-2.jpg' %}" alt="slider-2"></div>
+                <div class="single-slider pt-210 pb-220 bg-img" style="background-image:url(assets/img/slider/slider-2.jpg});">
                     <div class="container">
                         <div class="slider-content slider-animated-1">
-                            <h1 class="animated">Drink & Heathy Food</h1>
-                            <h3 class="animated">Fresh Heathy and Organic.</h3>
+                            <h1 class="animated">Have a Good Time</h1>
+                            <h3 class="animated">Experince Lagos Life</h3>
                             <div class="slider-btn mt-90">
                                 <a class="animated" href="product-details">Order Now</a>
                             </div>
@@ -375,11 +427,11 @@
                             <a href="#"><img src="{% static 'assets/img/banner/banner-2.jpg' %}" alt=""></a>
                         </div>
                     </div>
-                    <div class="single-banner">
+                    <!-- <div class="single-banner">
                         <div class="hover-style">
                             <a href="#"><img src="{% static 'assets/img/banner/banner-3.jpg' %}" alt=""></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -407,7 +459,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-1.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -421,11 +473,11 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">HENNESSY X.O </a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$100.00</span>
-                                            <span class="product-price-old">$120.00 </span>
+                                            <span>$40,000.00</span>
+                                            <span class="product-price-old">N50,000.00 </span>
                                         </div>
                                     </div>
                                 </div>
@@ -434,7 +486,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-2.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -448,10 +500,10 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">CIROC AMARETTE</a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$200.00</span>
+                                            <span>N200,000.00</span>
                                         </div>
                                     </div>
                                 </div>
@@ -460,7 +512,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-3.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -474,11 +526,11 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">SKYY FUSION </a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$90.00</span>
-                                            <span class="product-price-old">$100.00 </span>
+                                            <span>$90,000.00</span>
+                                            <span class="product-price-old">N100,000.00 </span>
                                         </div>
                                     </div>
                                 </div>
@@ -487,7 +539,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-4.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -501,10 +553,10 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">CIROC VODKA</a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$50.00</span>
+                                            <span>N50,000.00</span>
                                         </div>
                                     </div>
                                 </div>
@@ -513,7 +565,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -527,11 +579,11 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">CAPTAIN JACK</a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$60.00</span>
-                                            <span class="product-price-old">$70.00 </span>
+                                            <span>N60,000.00</span>
+                                            <span class="product-price-old">N70,000.00 </span>
                                         </div>
                                     </div>
                                 </div>
@@ -540,7 +592,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-6.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-6.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -554,10 +606,10 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">HENNESSY X.O</a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$190.00</span>
+                                            <span>N190,000.00</span>
                                         </div>
                                     </div>
                                 </div>
@@ -566,7 +618,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-7.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -580,11 +632,11 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">GLENFIDDICH</a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$150.00</span>
-                                            <span class="product-price-old">$170.00 </span>
+                                            <span>N150,000.00</span>
+                                            <span class="product-price-old">N170,000.00 </span>
                                         </div>
                                     </div>
                                 </div>
@@ -593,7 +645,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-8.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -607,10 +659,10 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">STRAWBERRY </a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$80.00</span>
+                                            <span>N80,000.00</span>
                                         </div>
                                     </div>
                                 </div>
@@ -633,11 +685,11 @@
                                     </div>
                                     <div class="product-content">
                                         <h4>
-                                            <a href="product-details">PRODUCTS NAME HERE </a>
+                                            <a href="product-details">COCKTAIL </a>
                                         </h4>
                                         <div class="product-price-wrapper">
-                                            <span>$180.00</span>
-                                            <span class="product-price-old">$190.00 </span>
+                                            <span>N18,000.00</span>
+                                            <span class="product-price-old">N19,000.00 </span>
                                         </div>
                                     </div>
                                 </div>
@@ -729,7 +781,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-7.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -756,7 +808,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-8.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -782,7 +834,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-6.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-6.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -809,7 +861,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -835,7 +887,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-4.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -862,7 +914,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-3.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -888,7 +940,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-2.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -915,7 +967,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-1.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -945,7 +997,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -972,7 +1024,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-4.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -998,7 +1050,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-2.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1025,7 +1077,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-3.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1051,7 +1103,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-1.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1131,7 +1183,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-7.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1157,7 +1209,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-8.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1184,7 +1236,7 @@
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="product-details">
-                                            <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
+                                            <img src="{% static 'assets/img/product/product-5.png' %}" alt="">
                                         </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
@@ -1237,7 +1289,7 @@
                     <div class="best-food-width-2">
                         <div class="product-top-bar section-border mb-25">
                             <div class="section-title-wrap">
-                                <h3 class="section-title section-bg-white">Best Food In Our Shop</h3>
+                                <h3 class="section-title section-bg-white">Best Food In Ourshop</h3>
                             </div>
                             <div class="product-tab-list-2 nav section-bg-white">
                                 <a class="active" href="#tab4" data-toggle="tab">
@@ -1257,7 +1309,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-1.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1282,7 +1334,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-2.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1306,7 +1358,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-3.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-3.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1331,7 +1383,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-4.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-4.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1359,7 +1411,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-5.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-5.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1384,7 +1436,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-6.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-6.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1408,7 +1460,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-7.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-7.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1433,7 +1485,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-8.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-8.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1510,7 +1562,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-1.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-1.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1535,7 +1587,7 @@
                                     <div class="product-wrapper">
                                         <div class="product-img">
                                             <a href="product-details">
-                                                <img src="{% static 'assets/img/product/product-2.jpg' %}" alt="">
+                                                <img src="{% static 'assets/img/product/product-2.png' %}" alt="">
                                             </a>
                                             <div class="product-action">
                                                 <div class="pro-action-left">
@@ -1601,8 +1653,9 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="footer-about mb-40">
                                 <div class="footer-logo">
-                                    <a href="index.html">
-                                        <img src="{% static 'assets/img/logo/footer-logo.png' %}" alt="">
+                                    <a href="">
+                                        <!-- <img src="{% static 'assets/img/logo/footer-logo.png' %}" alt=""> -->
+                                        <h2>GoodTime</h2>
                                     </a>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -1654,9 +1707,9 @@
                                 </div>
                                 <div class="footer-contact">
                                     <ul>
-                                        <li>Address: 123 Main Street, Anytown, CA 12345 - USA.</li>
-                                        <li>Telephone Enquiry: (012) 800 456 789-987 </li>
-                                        <li>Email: <a href="#">Info@example.com</a></li>
+                                        <li>Address: 102 Habert Macaulay Way, Sabo, Lagos 123 - NIGERIA.</li>
+                                        <li>Telephone Enquiry: (234) 8100 9910 54 </li>
+                                        <li>Email: <a href="#">Info@goodtime.com</a></li>
                                     </ul>
                                 </div>
                                 <div class="mt-35 footer-title mb-22">
@@ -1678,7 +1731,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-7">
                             <div class="copyright">
-                                <p>Copyright © <a href="#">Billy.</a> . All Right Reserved.</p>
+                                <p>Copyright © <a href="#">GoodTime.</a> . All Right Reserved.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-5">
